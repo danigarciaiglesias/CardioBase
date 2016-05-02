@@ -1,0 +1,172 @@
+<meta charset="utf-8" />
+<body>
+<h1>Formulario SCA Ingreso</h1>
+
+<form name="formulario" id="formulario" method="POST">
+
+	<h2>Datos Generales</h2>
+	<table id="DatosGeneralesTabla"><tr>
+		<td>
+			<p class="item">Número de Historia<br><input type="text" name="NHistoria"><br></p>
+			<p class="item">Nombre<br><input type="text" name="nombre"><br></p>
+			<p class="item">Primer Apellido<br><input type="text" name="apellido1"><br></p>
+			<p class="item">Segundo Apellido<br><input type="text" name="apellido2"><br></p>
+		</td>
+		<td>
+			<p class="item">Fecha de Nacimiento<br>Día: <input type="text" name="FNacimientoDia"><br>Mes: <input type="text" name="FNacimientoMes"><br>Ano: <input type="text" name="FNacimientoAno"><br></p>
+			<br></br>
+			<p class="item">Sexo<br><input type="radio" name="sexo" value="varon">Varón <input type="radio" name="sexo" value="mujer">Mujer<br></p>
+		</td>
+	</tr></table>
+	<br>
+
+	<h2>Antecedentes Personales</h2>
+	<table id="AntecedentesPersonalesTabla">
+	<tr>
+		<td>
+			<p class="item">IAM<br><input type="radio" name="HIAM" value="si">Si <input type="radio" name="HIAM" value="no">No<br></p>
+			<p class="item">Angor<br><input type="radio" name="HAngor" value="si">Si <input type="radio" name="HAngor" value="no">No<br></p>
+			<p class="item">Insuficiencia Cardiaca (Clínica)<br><input type="radio" name="HIC" value="si">Si <input type="radio" name="HIC" value="no">No<br></p>
+			<p class="item">Disfunción Ventricular (Asintomática) - FEVI <50% </br><input type="radio" name="HDV" value="si">Si <input type="radio" name="HDV" value="no">No<br></p>
+			<p class="item">FEVI % Previa (Última ETT si disponible)<br><input type="text" name="HFEVI"><br></p>		
+			<p class="item">Valvulopatías<br><input type="radio" name="HValvular" value="si">Si <input type="radio" name="HValvular" value="no">No<br></p>
+			<p class="item">Cardiopatía Hipertensiva<br><input type="radio" name="HCHipertensiva" value="si">Si <input type="radio" name="HCHipertensiva" value="no">No<br></p>
+			<p class="item">Fibrilación Auricular<br><input type="radio" name="HFA" value="si">Si <input type="radio" name="HFA" value="no">No<br></p>
+			<p class="item">ACTP<br><input type="radio" name="HACTP" value="si">Si <input type="radio" name="HACTP" value="no">No<br></p>
+			<p class="item">CABG<br><input type="radio" name="HCABG" value="si">Si <input type="radio" name="HCABG" value="no">No<br></p>
+		</td><td>
+			<p class="item">Fumador<br><input type="radio" name="HFumador" value="si">Si <input type="radio" name="HFumador" value="no">No<br></p>
+			<p class="item">Diabetes Mellitus (Dieta, ADOs o Insulina)<br><input type="radio" name="HDM" value="si">Si<input type="radio" name="HDM" value="no">No<br></p>
+			<p class="item">HTA<br><input type="radio" name="HHTA" value="si">Si <input type="radio" name="HHTA" value="no">No<br></p>
+			<p class="item">Dislipemia<br><input type="radio" name="HDL" value="si">Si <input type="radio" name="HDL" value="no">No<br></p>
+			<p class="item">Historia Familiar<br><input type="radio" name="HFamiliar" value="si">Si <input type="radio" name="HFamiliar" value="no">No<br></p>
+			<p class="item">ACV<br><input type="radio" name="HACV" value="si">Si <input type="radio" name="HACV" value="no">No<br></p>
+			<p class="item">Enfermedad Vascular Periférica<br><input type="radio" name="HEVP" value="si">Si <input type="radio" name="HEVP" value="no">No<br></p>
+			<p class="item">Enfermedad Renal Crónica<br><input type="radio" name="HERC" value="si">Si <input type="radio" name="HERC" value="no">No<br></p>
+			<p class="item">Enfermedades Pulmonares<br><input type="radio" name="HPulmonar" value="si">Si <input type="radio" name="HPulmonar" value="no">No<br></p>
+		</td></tr>
+	<tr><td colspan="2"><p class="item">Antecedentes Personales (Otros)<br><textarea cols="1" rows="9" name="AntecedentesPersonalesOtros" class="TextoGrande"></textarea><br></p></td></tr>
+	</table>
+	<br>
+
+	<h2>Tratamiento Previo</h2>
+	<table id="TratamientoPrevioTabla">
+	<tr><td>
+		<p class="item">Antiagregación<br><input type="radio" name="TtoPreAntiagregacion" value="simple">Simple <input type="radio" name="TtoPreAntiagregacion" value="multiple">Múltiple <input type="radio" name="TtoPreAntiagregacion" value="no">No<br></p>
+		<p class="item">ACO<br><input type="radio" name="TtoPreACO" value="si">Si <input type="radio" name="TtoPreACO" value="no">No<br></p>
+		<p class="item">Beta-bloqueantes<br><input type="radio" name="TtoPreBb" value="si">Si <input type="radio" name="TtoPreBb" value="no">No<br></p>
+		<p class="item">IECA o ARA II<br><input type="radio" name="TtoPreIECAARA" value="si">Si <input type="radio" name="TtoPreIECAARA" value="no">No<br></p>
+		<p class="item">Antialdosterónicos<br><input type="radio" name="TtoPreAntialdosteronicos" value="si">Si <input type="radio" name="TtoPreAntialdosteronicos" value="no">No<br></p>
+		<p class="item">Diuréticos<br><input type="radio" name="TtoPreDiureticos" value="si">Si <input type="radio" name="TtoPreDiureticos" value="no">No<br></p>
+	</td><td>
+		<p class="item">Nitratos<br><input type="radio" name="TtoPreNitratos" value="si">Si <input type="radio" name="TtoPreNitratos" value="no">No<br></p>
+		<p class="item">Antagonistas del Calcio<br><input type="radio" name="TtoPreAntagonistasCalcio" value="si">Si <input type="radio" name="TtoPreAntagonistasCalcio" value="no">No<br></p>
+		<p class="item">Insulina<br><input type="radio" name="TtoPreInsulina" value="si">Si <input type="radio" name="TtoPreInsulina" value="no">No<br></p>
+		<p class="item">ADOs<br><input type="radio" name="TtoPreADO" value="si">Si <input type="radio" name="TtoPreADO" value="no">No<br></p>
+		<p class="item">Estatinas<br><input type="radio" name="TtoPreEstatina" value="si">Si <input type="radio" name="TtoPreEstatina" value="no">No<br></p>
+	</td></tr>
+	<tr><td colspan="2"><p class="item">Tratamiento Previo<br><textarea cols="1" rows="9" name="TratamientoPrevio" class="TextoGrande"></textarea><br></p></td></tr>
+	</table>
+	<br>
+
+	<h2>Datos al ingreso</h2>
+	<table id="DatosIngresoTabla">
+	<tr><td>
+		<h3>Motivo de Consulta</h3>
+		<p class="item">Motivo de Consulta<br><input type="text" name="MotivoConsulta" class="TextoAlargado"><br></p>
+		<h3>Enfermedad Actual</h3>
+		<p class="item">Enfermedad Actual<br><textarea cols="1" rows="9" name="EnfermedadActual" class="TextoGrande"></textarea><br></p>
+	</td><td>
+		<p class="item">Inicio Clínica<br>Día: <input type="text" name="IngresoInicioClinicaDia"><br>Mes: <input type="text" name="IngresoInicioClinicaMes"><br>Ano: <input type="text" name="IngresoInicioClinicaAno"><br>Hora: <input type="text" name="IngresoInicioClinicaHora"><br>Minutos: <input type="text" name="IngresoInicioClinicaMinutos"><br></p>
+		<p class="item">Ingreso - Urgencias - Puerta<br>Día: <input type="text" name="IngresoFechaDia"><br>Mes: <input type="text" name="IngresoFechaMes"><br>Ano: <input type="text" name="IngresoFechaAno"><br>Hora: <input type="text" name="IngresoFechaHora"><br>Minutos: <input type="text" name="IngresoFechaMinutos"><br></p>
+	</td></tr>
+	</table>
+	<br>
+
+	<h3>Exploración Física</h3>
+	<table id="ExploracionFisicaTabla">
+	<tr><td>
+		<p class="item">Tensión Arterial Sistólica al ingreso<br><input type="text" name="IngresoTAS"><br></p>
+		<p class="item">Tensión Arterial Diastólica al ingreso<br><input type="text" name="IngresoTAD"><br></p>
+	</td><td>
+		<p class="item">Frecuencia Cardiaca al ingreso<br><input type="text" name="IngresoFC"><br></p>
+		<p class="item">Situación hemodinámica (Killip) al ingreso<br><input type="text" name="IngresoKillip"><br></p>
+	</td></tr>
+	<tr><td colspan="2"><p class="item">Exploración física normal<br><input type="radio" name="ExploracionFisicaNormal" value="si">Si <input type="radio" name="ExploracionFisicaNormal" value="no">No<br></p></td></tr>
+	<tr><td colspan="2"><p class="item">Exploración Física (Si es patológica)<br><textarea cols="1" rows="9" name="ExploracionFisica" class="TextoGrande"></textarea><br></p></td></tr>
+	</table>
+	<br>
+
+	<h3>ECG</h3>
+	<table id="ECGTabla">
+	<tr><td>
+		<p class="item">Ritmo Sinusal<br><input type="radio" name="IngresoECGRitmoSinusal" value="si">Si <input type="radio" name="IngresoECGRitmoSinusal" value="no">No<br></p>
+		<p class="item">Frecuencia ECG ingreso<br><input type="text" name="IngresoECGFrecuencia"><br></p>
+		<p class="item">Registro Taqui-Arritmias al ingreso (FA, TSV, TVNS, TVS, FV...)<br><input type="radio" name="IngresoECGRegistroTaquiArritmia" value="si">Si <input type="radio" name="IngresoECGRegistroTaquiArritmia" value="no">No<br></p>
+		<p class="item">Registro Bradi-Arritmias al ingreso<br><input type="radio" name="IngresoECGRegistroBradiArritmia" value="si">Si <input type="radio" name="IngresoECGRegistroBradiArritmia" value="no">No<br></p>
+	</td><td>
+		<p class="item">Bloqueo Rama izqda al ingreso<br><input type="radio" name="IngresoECGBloqueoRI" value="si">Si <input type="radio" name="IngresoECGBloqueoRI" value="no">No<br></p>
+		<p class="item">Alteraciones ST<br><input type="radio" name="IngresoECGAltST" value="si">Si <input type="radio" name="IngresoECGAltST" value="no">No<br></p>
+		<p class="item">Alteraciones Onda T<br><input type="radio" name="IngresoECGAltOndaT" value="si">Si <input type="radio" name="IngresoECGAltOndaT" value="no">No<br></p>
+		<p class="item">Localización<br><input type="text" name="IngresoECGLocalizacion"><br></p>
+	</td></tr>
+	<tr><td colspan="2"><p class="item">Descripción ECG<br><input type="text" name="IngresoECGDescripcion" class="TextoAlargado"><br></td></tr>
+	</table>
+	<br>
+
+	<p class="item"><h3>Rx de tórax</h3>Rx. de Tórax<br><input type="text" name="RxTorax" class="TextoAlargado"><br></p>
+	<br>
+
+	<h3>Analítica</h3>
+	<table id="AnaliticaTabla">
+	<tr><td>
+		<p class="item">Enzimas elevadas al ingreso<br><input type="radio" name="IngresoEzElevadas" value="si">Si <input type="radio" name="IngresoEzElevadas" value="no">No<br></p>
+		<p class="item">CK Máxima al ingreso<br><input type="text" name="IngresoCK"><br></p>
+		<p class="item">Tn Máxima al ingreso<br><input type="text" name="IngresoTn"><br></p>
+		<p class="item">Glucemia al ingreso<br><input type="text" name="IngresoGlcIngreso"><br></p>
+		<p class="item">Urea Máxima al ingreso<br><input type="text" name="IngresoUrea"><br></p>
+		<p class="item">Cr Máxima al ingreso<br><input type="text" name="IngresoCr"><br></p>
+	</td><td>
+		<p class="item">Sodio al ingreso<br><input type="text" name="IngresoNa"><br></p>
+		<p class="item">Potasio Máxima al ingreso<br><input type="text" name="IngresoK"><br></p>
+		<p class="item">Hematocrito al ingreso<br><input type="text" name="IngresoHto"><br></p>
+		<p class="item">Hemoglobina al ingreso<br><input type="text" name="IngresoHb"><br></p>
+		<p class="item">Pruebas de F. Hepática alteradas al ingreso<br><input type="radio" name="IngresoPFHAlteradas" value="si">Si <input type="radio" name="IngresoPFHAlteradas" value="no">No<br></p>
+	</td></tr>
+	</table>
+	<br>
+
+	<h2>Diagnóstico y Plan</h2>
+		<p class="item">Diagnóstico al ingreso<br><textarea cols="1" rows="9" name="IngresoDiagnostico" class="TextoGrande"></textarea><br></p>
+		<p class="item">Plan<br><textarea cols="1" rows="9" name="IngresoPlan" class="TextoGrande"></textarea><br></p>
+	<br>
+
+	<input type="button" id="boton" value="Enviar">
+
+</form>
+
+<div id="introducir">
+	<p id="inicio"></p>
+	<p id="MotivoConsulta"></p>
+	<p id="AntecedentesPersonales"></p>
+	<p id="EnfermedadActual"></p>
+	<p id="ExploracionFisica"></p>
+	<p id="PruebasComplementarias"></p>
+	<p id="Diagnostico"></p>
+	<p id="Plan"></p>
+	<p id="salto1"></p>
+	<p id="variables"></p>
+	<p id="valores"></p>
+	<p id="salto2"></p>
+	<p id="fin"></p>
+</div>
+
+<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Licencia Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">Formulario SCA Ingreso</span> por <span xmlns:cc="http://creativecommons.org/ns#" property="cc:attributionName">Daniel García Iglesias</span> se distribuye bajo una <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Licencia Creative Commons Atribución-CompartirIgual 4.0 Internacional</a>.
+
+</body>
+
+<link rel="stylesheet" type="text/javascript" href="jquery-2.2.3.js" media="screen" />
+
+<link rel="stylesheet" type="text/javascript" href="script.js" media="screen" />
+
+<link rel="stylesheet" type="text/css" href="estilo.css" media="screen" />
